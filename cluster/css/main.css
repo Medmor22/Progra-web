@@ -1,0 +1,128 @@
+/* ==========================================================================
+   CONFIGURACIÓN GENERAL Y PALETA DE COLORES (CLAUGTO INSPIRATION)
+   ========================================================================== */
+:root {
+    --color-azul-primario: #0A2540;   /* Azul profundo automotriz */
+    --color-azul-hover: #153E66;      /* Azul intermedio para interactividad */
+    --color-rojo-acento: #D91A2A;     /* Rojo institucional dinámico */
+    --color-rojo-hover: #B01220;      /* Rojo oscuro para hover en botones */
+    --color-blanco: #FFFFFF;          /* Blanco limpio */
+    --color-fondo-gris: #F4F6F8;     /* Fondo suave para contraste */
+    --color-texto: #333333;           /* Texto legible */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo-gris);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   ENCABEZADO Y NAVEGACIÓN HORIZONTAL
+   ========================================================================== */
+.header-site {
+    background-color: var(--color-blanco);
+    border-top: 5px solid var(--color-rojo-acento);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+#sub {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--color-azul-primario);
+    padding: 15px 20px 5px 20px;
+}
+
+#sub1 {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666666;
+    font-weight: normal;
+    padding: 0 20px 15px 20px;
+}
+
+/* Estructura del Menú Principal */
+.main-nav {
+    background-color: var(--color-azul-primario);
+    width: 100%;
+}
+
+/* Lista horizontal */
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite adaptación en pantallas medianas */
+    align-items: center;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Elementos de la lista */
+.nav-item {
+    margin: 0;
+}
+
+/* Enlaces del menú */
+.nav-link {
+    display: block;
+    padding: 14px 18px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* Estado Hover y Activo */
+.nav-link:hover {
+    background-color: var(--color-azul-hover);
+    border-bottom: 3px solid var(--color-rojo-acento);
+}
+
+.nav-link.active {
+    border-bottom: 3px solid var(--color-rojo-acento);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Destacado especial: Solicitar Cotización */
+.nav-link.btn-quote {
+    background-color: var(--color-rojo-acento);
+    color: var(--color-blanco);
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 6px 10px;
+    border-bottom: none;
+}
+
+.nav-link.btn-quote:hover {
+    background-color: var(--color-rojo-hover);
+    border-bottom: none;
+}
+
+/* ==========================================================================
+   ESTILOS DE CONTENIDO PRINCIPAL (EJEMPLO)
+   ========================================================================== */
+main, aside, footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    font-size: 0.85rem;
+    color: #777;
+}
